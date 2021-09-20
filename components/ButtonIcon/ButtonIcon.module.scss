@@ -1,36 +1,39 @@
 .button {
-    width: 40px;
-	height: 40px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-	border-radius: 10px;
-	cursor: pointer;
-	border: none;
-    padding: 0;
- 
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
 }
 
-
 .primary {
-     background-color: var(--primary);
-     svg * {
-         fill: var(--white);
-     }
-     :hover {
-        background-color: var(--primary-hover);
-     }
-     
+  background-color: var(--primary);
+
+  svg * {
+    fill: var(--white);
+  }
+
+  :hover {
+    background-color: var(--primary-hover);
+  }
 }
 
 .white {
-    background-color: var(--white);
-    svg * {
-        fill: var(--primary);
-        :hover {
-            fill: var(--white)
-        }
-    }
+  background-color: var(--white);
+
+  :hover {
+    background-color: var(--primary);
+  }
+
+  svg * {
+    fill: var(--primary);
+
     :hover {
-       background-color: var(--primary);
+      fill: var(--white);
     }
-    
+  }
 }

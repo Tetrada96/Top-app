@@ -18,23 +18,25 @@ a {
 }
 
 .visualyHidden {
-  width:0;
-  height: 0;
-  overflow: hidden;
   position: absolute;
+
+  overflow: hidden;
+
+  width: 0;
+  height: 0;
 }
 
 :root {
   --black: #3B434E;
   --gray-light: #EBEBEB;
   --gray: #A4A4A4;
-  --gray-dark: #6c7077;
+  --gray-dark: #6C7077;
   --white: #FFF;
-  --primary: #7351f5;
-  --primary-hover: #6441ee;
+  --primary: #7351F5;
+  --primary-hover: #6441EE;
   --red: #FC836D;
-  --red-light: #f79989;
-  --green:  #077745;
+  --red-light: #F79989;
+  --green: #077745;
   --green-light: #C8F8E4;
   --font-family: "Noto Sans", sans-serif;
 }

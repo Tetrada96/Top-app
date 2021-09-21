@@ -8,7 +8,7 @@
 	],
 	"rules": {
 		"indentation": [
-			2
+			"tab"
 		],
 		"color-hex-case": "upper",
 		"declaration-colon-newline-after": null,

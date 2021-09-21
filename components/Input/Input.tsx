@@ -1,5 +1,5 @@
 import { InputProps } from './Input.Props';
-import styles from './Input.module.scss';
+import styles from './Input.module.css';
 import cn from 'classnames';
 import { ForwardedRef, forwardRef } from 'react';
 

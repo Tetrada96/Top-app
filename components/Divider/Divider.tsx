@@ -1,5 +1,5 @@
 import { DividerProps } from './Divider.Props';
-import styles from './Divider.module.scss';
+import styles from './Divider.module.css';
 import cn from 'classnames';
 
 export const Divider = ({ className, ...props }: DividerProps): JSX.Element => {

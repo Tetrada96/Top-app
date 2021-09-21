@@ -1,5 +1,5 @@
 import { AdvantagesProps } from './Advantages.props';
-import styles from './Advantages.module.scss';
+import styles from './Advantages.module.css';
 // import cn from 'classnames';
 import React from 'react';
 import PlusIcon from './Plus.svg';

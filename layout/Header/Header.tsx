@@ -1,5 +1,5 @@
 import { HeaderProps } from './Header.Props';
-import styles from './Header.module.scss';
+import styles from './Header.module.css';
 import cn from 'classnames';
 import Logo from '../logo.svg';
 import { ButtonIcon } from '../../components';

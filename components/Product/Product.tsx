@@ -1,10 +1,10 @@
 import { ProductProps } from './Product.Props';
-import styles from './Product.module.scss';
+import styles from './Product.module.css';
 import cn from 'classnames';
 import { Button, Card, Divider, Rating, Review, ReviewForm, Tag } from '..';
 import React, { forwardRef, useRef, useState, ForwardedRef } from 'react';
 import { declofNum, priceRu } from '../../helpers/helpers';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export const Product = motion(forwardRef(({ product, className, ...props }: ProductProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
@@ -27,14 +27,14 @@ export const Product = motion(forwardRef(({ product, className, ...props }: Prod
         <div className={className} {...props} ref={ref}>
             <Card className={styles.product}>
                 <div className={styles.logo}>
-                    <Image
+                    <img
                         src={process.env.NEXT_PUBLIC_DOMAIN + product.image}
                         alt={product.title}
                         width={70}
                         height={70}
                     >
 
-                    </Image>
+                    </img>
                 </div>
                 <div className={styles.title}>{product.title}</div>
                 <div className={styles.price}>

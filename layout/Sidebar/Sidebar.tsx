@@ -2,7 +2,7 @@ import React from 'react';
 import { Menu } from '../Menu/Menu';
 import { SidebarProps } from './Sidebar.Props';
 import Logo from '../logo.svg';
-import styles from './Sidebar.module.scss';
+import styles from './Sidebar.module.css';
 import cn from 'classnames';
 import { Search } from '../../components';
 

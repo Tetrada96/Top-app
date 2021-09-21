@@ -1,5 +1,5 @@
 import { FooterProps } from './Footer.Props';
-import styles from './Footer.module.scss';
+import styles from './Footer.module.css';
 import cn from 'classnames';
 import { format } from 'date-fns';
 

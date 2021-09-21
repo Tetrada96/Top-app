@@ -1,5 +1,5 @@
 import { TextAreaProps } from './TextArea.Props';
-import styles from './TextArea.module.scss';
+import styles from './TextArea.module.css';
 import cn from 'classnames';
 import { ForwardedRef, forwardRef } from 'react';
 

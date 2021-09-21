@@ -1,6 +1,6 @@
 import { ReviewProps } from './Review.props';
 import UserIcon from './user.svg';
-import styles from './Review.module.scss';
+import styles from './Review.module.css';
 import cn from 'classnames';
 import { format } from 'date-fns';
 import { ru } from 'date-fns/locale';

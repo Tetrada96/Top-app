@@ -1,5 +1,5 @@
 import { LayoutProps } from "./Layout.props";
-import styles from './Layout.module.scss';
+import styles from './Layout.module.css';
 import React, { FunctionComponent, KeyboardEvent, useRef, useState } from "react";
 import { Header } from "./Header/Header";
 import { Sidebar } from "./Sidebar/Sidebar";
@@ -26,7 +26,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
         <div className={styles.wrapper}>
             <a
                 onFocus={() => setIsSkipLinkDisplayed(true)}
-                tabIndex={1}
+                tabIndex={0}
                 onKeyDown={skipContentAction}
                 className={cn(styles.skipLink, {
                     [styles.displayed]: isSkipLinkDisplayed

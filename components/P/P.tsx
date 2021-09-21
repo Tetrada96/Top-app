@@ -1,5 +1,5 @@
 import { PProps } from './P.Props';
-import styles from './P.module.scss';
+import styles from './P.module.css';
 import cn from 'classnames';
 
 export const P = ({ fontsize = 'm', children, className, ...props }: PProps): JSX.Element => {

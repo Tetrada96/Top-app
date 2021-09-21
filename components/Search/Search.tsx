@@ -1,7 +1,7 @@
 import { SearchProps } from './Search.Props';
-import styles from './Search.module.scss';
+import styles from './Search.module.css';
 import cn from 'classnames';
-import React, { useState } from 'react';
+import React, { useState, KeyboardEvent } from 'react';
 import { Button, Input } from '..';
 import SearchIcon from './search.svg';
 import { useRouter } from 'next/dist/client/router';

@@ -1,5 +1,5 @@
 import { ReviewFormProps } from './ReviewForm.props';
-import styles from './ReviewForm.module.scss';
+import styles from './ReviewForm.module.css';
 import cn from 'classnames';
 // import { format } from 'date-fns';
 // import { ru } from 'date-fns/locale';

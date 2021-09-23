@@ -1,15 +1,11 @@
 FROM node:14-alpine AS builder
 WORKDIR /opt/app
 COPY . .
-#ADD package.json package.json
 RUN npm install
-#ADD . .
 ENV NODE_ENV production
 RUN npm run build && \
-    npm run export && \ 
-    npm prune --production
-#CMD ["npm", "start"]
-#EXPOSE 3000
+    npm run export
 
 FROM nginx:alpine
 COPY --from=builder /opt/app/out /usr/share/nginx/html
+RUN sed -i 's/index  index.html index.htm;/try_files $uri $uri\/ \/index.html;/g' /etc/nginx/conf.d/default.conf 

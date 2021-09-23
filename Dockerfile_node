@@ -1,0 +1,19 @@
+FROM node:14-alpine AS builder
+WORKDIR /opt/app
+COPY . .
+#ADD package.json package.json
+RUN npm install
+#ADD . .
+ENV NODE_ENV production
+RUN npm run build && \
+    npm prune --production
+# npm install --save prop-types
+CMD ["npm", "start"]
+EXPOSE 3000
+
+#FROM node:14-alpine
+#WORKDIR /opt/app
+#COPY --from=builder /opt/app/.next /opt/app/.next
+#COPY package.json package.json
+#CMD ["npm", "start"]
+#EXPOSE 3000
